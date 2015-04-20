@@ -1,57 +1,57 @@
-Table of Contents
+目錄
 =================
 
-- [Preface](preface.md)
+- [序言](preface.md)
 
-Unnoticed basics
+不被重視的基礎
 ----------------
 
-- How component works
-- Events
-- What to choose? Object or Component?
-- Configuring components globally
+- component 怎麼運作
+- 事件
+- Object 或者 Component？ 怎麼選擇？
+- component 全域設定
 
-Logging and error handling
+紀錄(logging)與錯誤處理
 --------------------------
 
-- [Logging: problems and solutions](logging-problems-and-solutions.md)
-- Customizing 404 page
-- Handling errors and exceptions
-- Understanding error stack trace
+- [紀錄：問題與解決方法](logging-problems-and-solutions.md)
+- 客製化 404 頁面
+- 處理錯誤與例外
+- 理解 error stack trace
 
-Web essentials
+網頁要領
 --------------
 
-- [URLs with varialbe number of parameters](urls-variable-number-of-parameters.md)
-- [Outputting JSON and XML](response-formats.md)
-- Using Google fonts as assets
-- [Managing cookies](cookies.md)
-- Using WYSIWYG
+- [含參數編號的網址](urls-variable-number-of-parameters.md)
+- [輸出 JSON 和 XML](response-formats.md)
+- 將 Google fonts 當作 asset
+- [處理 cookies](cookies.md)
+- 使用所見及所得（WYSIWYG）介面
 - AJAX???
-- [Handling incoming third party POST requests](incoming-post.md)
+- [處理進來的第三方 POST requests](incoming-post.md)
 
-Forms
+表格
 -----
 
-- [Using and customizing captcha](forms-captcha.md)
+- [使用與客製化　captcha](forms-captcha.md)
 
-Security
+安全性
 --------
 
-- A safe approach to passwords explained
-- SQL injection
-- XSS
-- RBAC
-- CSRF
+- 一個更安全的密碼詳述
+- SQL資料隱碼攻擊（SQL injection）
+- 跨網站指令碼（XSS）
+- 以角色為基礎的存取控制（RBAC）
+- 跨站請求偽造（CSRF）
 
-Structuring and organizing code
+結構和組織代碼
 -------------------------------
 
-- [Backend and frontend via modules](structure-backend-frontend-modules.md)
+- [透過模組建立後台與前台](structure-backend-frontend-modules.md)
 - [Asset processing with Grunt](structure-asset-processing-with-grunt.md)
 
 
-View
+視界（View）
 ----
 
 - Reusing views via partials
@@ -59,7 +59,7 @@ View
 - Using decorators
 - When to use Widgets and when not to
 
-Models
+模型（Models）
 ------
 
 
@@ -67,12 +67,12 @@ Active Record
 -------------
 
 - Has and belongs to many
-- Using SQL and noSQL at the same time
+- 同時使用 SQL 和 noSQL
 - Saving related models
 - [Single table inheritance](ar-single-table-inheritance.md)
 
 
-i18n
+國際化（i18n）
 ----
 
 - General best practices
@@ -80,7 +80,7 @@ i18n
 - Translating content
 
 
-Performance
+效能
 -----------
 
 - Necessary production setup
@@ -88,14 +88,14 @@ Performance
 - Implementing backgroud tasks (cronjobs)
 - [Running Yii on HHVM](performance-hhvm.md)
 
-External code
+外部程式碼
 -------------
 
-- [Using Yii in third party apps](using-yii-in-third-party-apps.md)
+- [在第三方 app 內使用 Yii](using-yii-in-third-party-apps.md)
 - Using third party code with Yii
 
-Tools
+工具
 -----
 
-- Making your life easier (XDebug, debug toolbar, gii)
+- 讓你的人生更輕鬆 (XDebug, debug toolbar, gii)
 - [IDE autocompletion for custom components](ide-autocompletion.md)
