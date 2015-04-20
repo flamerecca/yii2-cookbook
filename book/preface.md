@@ -1,26 +1,25 @@
-序言
+Preface
 =======
-（[原文連接](https://github.com/samdark/yii2-cookbook/blob/master/book/preface.md)）
-Yii 是一個高效率的 PHP 框架，最適合開發現代化的網頁應用與API，以及手機上面的網頁應用。
 
-Yii 有許多特色：MVC架構、ActiveRecord、I18N/L10N、caching、認證機制，以及以角色為基礎的存取控制(role-based access control)、程式碼生成、測試、API 框架﹍﹍等等。Yii可以大幅減低網頁開發的時間。
+Yii is a high-performance PHP framework best for developing modern web applications and APIs for mobile clients.
 
-這本書在說什麼？
+Yii comes with rich features: MVC, ActiveRecord, I18N/L10N, caching, authentication and role-based access control, code generation, testing, API framework etc. It can reduce your development time significantly.
+
+What's the book about?
 ----------------------
 
-如果你已經熟悉Yii 2.0，讀過官方教學，並開始嘗試做出一些應用，這本書就是為你設計的。本書涵蓋重要的 Yii 概念，解釋怎麼實做一些不大常見的做法，並提供一系列捷徑與說明，讓你能進行更簡單，更快，更可靠的應用程序開發。
+The book is for you if you're familiar with Yii 2.0, already read official guide and tried building application with it. It covers fundamentally important Yii concepts, explains how to do not so common things and overall provides a set of shortcuts and explainations resulting in easier, much faster and reliable application development.
+
+The book consists of individual recipes you can apply to practice in you applications. Recipes are grouped into chapters by similar areas of where they could be applied. You can start reading from any recipe since one isn't required for another.
 
 
-這本書包含一系列獨立的訣竅，你可以實際運用在自己的應用裡面。類似領域的訣竅會放在同一個章節內。每個訣竅是獨立的，所以可以從任何一個章節開始看。
-
-
-先決條件
+Prerequisites
 -------------
 
-- 你應該先[安裝 Yii 2.0](http://www.yiiframework.com/doc-2.0/guide-start-installation.html).
-- You should be familiar with the framework basics and [官方指導](http://www.yiiframework.com/doc-2.0/guide-README.html).
+- You should [have Yii 2.0 installed](http://www.yiiframework.com/doc-2.0/guide-start-installation.html).
+- You should be familiar with the framework basics and [the official guide](http://www.yiiframework.com/doc-2.0/guide-README.html).
 
-如何參與
+How to participate
 ------------------
 
-如果你找到任何錯誤、不正確的資料、或者任何對本書的建議。可以在[本書(英文版)的repository](https://github.com/samdark/yii2-cookbook) 開一個 issue 或者 pull request。
+If you've found any errata, incorrect information, know how to improve something or have a good recipe for the book, either create an issue or make a pull request in [the book github repository](https://github.com/samdark/yii2-cookbook).
