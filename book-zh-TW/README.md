@@ -86,7 +86,7 @@ Active Record
 - Necessary production setup
 - Speeding up sessions
 - Implementing backgroud tasks (cronjobs)
-- [Running Yii on HHVM](performance-hhvm.md)
+- [在 HHVM 上面執行](performance-hhvm.md)
 
 外部程式碼
 -------------
