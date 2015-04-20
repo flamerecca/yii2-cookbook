@@ -1,6 +1,5 @@
 序言
 =======
-（[原文連接](https://github.com/samdark/yii2-cookbook/blob/master/book/preface.md)）
 Yii 是一個高效率的 PHP 框架，最適合開發現代化的網頁應用與API，以及手機上面的網頁應用。
 
 Yii 有許多特色：MVC架構、ActiveRecord、I18N/L10N、caching、認證機制，以及以角色為基礎的存取控制(role-based access control)、程式碼生成、測試、API 框架﹍﹍等等。Yii可以大幅減低網頁開發的時間。
