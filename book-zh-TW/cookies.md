@@ -6,7 +6,7 @@
 發送cookie
 ----------------
 
-要發送一個cookie，換句話說， to create it and schedule for sending to the browser，要先建立一個新的`\yii\web\Cookie`物件，並加入 cookie 回應的集合裡面：
+要發送一個cookie，換句話說，建立一個 cookie 並傳輸至瀏覽器，要先建立一個新的`\yii\web\Cookie`物件，並加入 cookie 回應的集合裡面：
 
 ```php
 $cookie = new Cookie([
@@ -17,15 +17,14 @@ $cookie = new Cookie([
 \Yii::$app->getResponse()->getCookies()->add($cookie);
 ```
 
-In the above we're passing parameters to cookie class constructor. These basically the same as used with native PHP [setcookie](http://php.net/manual/en/function.setcookie.php) function:
+上面的 code，我們將參數傳輸至 Yii 內 cookie 類別的 constructor，這些參數基本上與 PHP [setcookie](http://php.net/manual/en/function.setcookie.php) 函數裡面的參數相同：
 
 - `name` - cookie 名稱
-- `value` - cookie 的值。 Make sure it's a string. Browsers typically aren't happy about binary data in cookies.
-- `domain` - domain you're setting the cookie for.
-- `expire` - unix timestamp indicating time when the cookie should be automatically deleted.
-- `path` - the path on the server in which the cookie will be available on.
+- `value` - cookie 的值。請確定該值是字串。瀏覽器基本上不喜歡 cookie 內有 binary 的資料。
+- `domain` - cookie 所屬的 domain
+- `expire` - cookie 應該過期的 unix timestamp
 - `secure` - 如果設為 `true`，cookie 只會在HTTPS連線時傳送
-- `httpOnly` - 如果設為 `true`, cookie will not be available via JavaScript.
+- `httpOnly` - 如果設為 `true`，cookie 無法用 JavaScript 操作。
 
 讀取cookie
 ----------------
@@ -84,7 +83,7 @@ $config = [
 ];
 ```
 
-Session cookie parameters
+Session cookie 參數
 -------------------------
 
 ???
