@@ -92,7 +92,7 @@ Active Record
 -------------
 
 - [在第三方 app 內使用 Yii](using-yii-in-third-party-apps.md)
-- Using third party code with Yii
+- 和 Yii 一起使用第三方程式碼
 
 工具
 -----

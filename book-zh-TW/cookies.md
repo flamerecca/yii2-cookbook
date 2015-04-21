@@ -1,12 +1,12 @@
-Managing cookies
+處理 cookies
 ================
 
-Managing HTTP cookies isn't that hard using plain PHP but Yii makes it a bit more convenient. In this recipe we'll describe how to perform typical cookie actions.
+用純 PHP 處理 HTTP cookies 並不難，但是 Yii 讓它用起來更方便。這篇訣竅裡面說明如何進行一般的 cookie 操作。
 
-Setting a cookie
+發送cookie
 ----------------
 
-To set a cookie i.e. to create it and schedule for sending to the browser you need to create new `\yii\web\Cookie` class instance and add it to response cookies collection:
+要發送一個cookie，換句話說， to create it and schedule for sending to the browser，要先建立一個新的`\yii\web\Cookie`物件，並加入 cookie 回應的集合裡面：
 
 ```php
 $cookie = new Cookie([
@@ -19,24 +19,24 @@ $cookie = new Cookie([
 
 In the above we're passing parameters to cookie class constructor. These basically the same as used with native PHP [setcookie](http://php.net/manual/en/function.setcookie.php) function:
 
-- `name` - name of the cookie.
-- `value` - value of the cookie. Make sure it's a string. Browsers typically aren't happy about binary data in cookies.
+- `name` - cookie 名稱
+- `value` - cookie 的值。 Make sure it's a string. Browsers typically aren't happy about binary data in cookies.
 - `domain` - domain you're setting the cookie for.
 - `expire` - unix timestamp indicating time when the cookie should be automatically deleted.
 - `path` - the path on the server in which the cookie will be available on.
-- `secure` - if `true`, cookie will be set only if HTTPS is used.
-- `httpOnly` - if `true`, cookie will not be available via JavaScript.
+- `secure` - 如果設為 `true`，cookie 只會在HTTPS連線時傳送
+- `httpOnly` - 如果設為 `true`, cookie will not be available via JavaScript.
 
-Reading a cookie
+讀取cookie
 ----------------
 
-In order to read a cookie use the following code:
+讀取 cookie 的程式碼如下：
 
 ```php
 $value = \Yii::$app->getRequest()->getCookies()->getValue('my_cookie');
 ```
 
-Cookies for subdomains
+子網域 Cookie
 ----------------------
 
 Because of security reasons, by default cookies are accessible only on the same domain from which they were set.
@@ -90,9 +90,9 @@ Session cookie parameters
 ???
 TBD
 
-See also
+其他資料
 --------
 
 - [API reference](http://stuff.cebe.cc/yii2docs/yii-web-cookie.html)
-- [PHP documentation](http://php.net/manual/en/function.setcookie.php)
+- [PHP 文件](http://php.net/manual/en/function.setcookie.php)
 - [RFC 6265](http://www.faqs.org/rfcs/rfc6265.html)
