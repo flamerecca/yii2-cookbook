@@ -1,15 +1,15 @@
-Using and customizing CAPTCHA
+使用與客製化 captcha
 =============================
 
-[Accodring to Wikipedia](http://en.wikipedia.org/wiki/Captcha) CAPTCHA means "Completely Automated Public Turing test to tell
-Computers and Humans Apart". In other words, CAPTCHA provides a problem human can solve easily but computer can't. The purpose
+根據[維基百科](http://en.wikipedia.org/wiki/Captcha) CAPTCHA 代表「完全自動公開圖零測試，分辨對方是電腦還是人類」（ "Completely Automated Public Turing test to tell
+Computers and Humans Apart）。換句話說，CAPTCHA 提供一個對人類很簡單但是電腦很難解的問題。 The purpose
 of it is to prevent automated abuse such as posting comments containing links to malicious websites or voting for a particular
 candidate in an election.
 
 Typical problem that is still quite tricky for computer algorithms is image recognition. That's why a common CAPTCHA shows
 an image with some text user should read and enter into input field.
 
-How add CAPTCHA to a form
+如何在表單裡面加入 CAPTCHA
 -------------------------
 
 Yii provides a set of ready to use classes to add CAPTCHA to any form. Let's review how it could be done.
