@@ -29,7 +29,7 @@ $cookie = new Cookie([
 讀取cookie
 ----------------
 
-讀取 cookie 的程式碼如下：
+Yii 讀取 cookie 的程式碼如下：
 
 ```php
 $value = \Yii::$app->getRequest()->getCookies()->getValue('my_cookie');
@@ -38,22 +38,23 @@ $value = \Yii::$app->getRequest()->getCookies()->getValue('my_cookie');
 子網域 Cookie
 ----------------------
 
-Because of security reasons, by default cookies are accessible only on the same domain from which they were set.
-For example, if you have set a cookie on domain `example.com`, you cannot get it on domain `www.example.com`.
-So if you're planning to use subdomains (i.e. admin.example.com, profile.example.com), you need to set `domain`
-explicitly:
+因為安全性的關係，預設上要操作 cookie ，只有設定該 cookie 的網頁才行。
+
+舉例來說，如果`example.com`設置了一個 cookie，那麼`www.example.com`就讀不到這個 cookie。
+
+如果你希望子網域可以使用該 cookie，（像是讓admin.example.com，profile.example.com可以操作該cookie），`domain`參數需要特別設置：
 
 ```php
 $cookie = new Cookie([
 	'name' => 'cookie_monster',
 	'value' => 'Me want cookie everywhere!',
 	'expire' => time() + 86400 * 365,
-	'domain' => '.example.com' // <<<=== HERE
+	'domain' => '.example.com' // <<<=== 重點!!!
 ]);
 \Yii::$app->getResponse()->getCookies()->add($cookie);
 ```
 
-Now cookie can be read from all subdomains of `example.com`.
+現在，該cookie 可以讓所有`example.com`的子網域取得了。
 
 Cross-subdomain authentication and identity cookies
 ---------------------------------------------------
