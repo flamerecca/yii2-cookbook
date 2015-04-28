@@ -56,13 +56,13 @@ $cookie = new Cookie([
 
 現在，該cookie 可以讓所有`example.com`的子網域取得了。
 
-Cross-subdomain authentication and identity cookies
+跨子網域認證與解析 cookie 
 ---------------------------------------------------
 
 In case of autologin or "remember me" cookie, the same quirks as in case of subdomain cookies are applying.
 But this time you need to configure user component, setting `identityCookie` array to desired cookie config.
 
-Open you application config file and add `identityCookie` parameters to user component configuration:
+打開 Yii 的config 檔案，並在 component 設定裡面新增 `identityCookie` 參數：
 
 ```php
 $config = [
