@@ -1,13 +1,11 @@
 使用與客製化 captcha
 =============================
 
-根據[維基百科](http://en.wikipedia.org/wiki/Captcha) CAPTCHA 代表「完全自動公開圖零測試，分辨對方是電腦還是人類」（ "Completely Automated Public Turing test to tell
-Computers and Humans Apart）。換句話說，CAPTCHA 提供一個對人類很簡單但是電腦很難解的問題。 The purpose
-of it is to prevent automated abuse such as posting comments containing links to malicious websites or voting for a particular
-candidate in an election.
+根據[維基百科](http://en.wikipedia.org/wiki/Captcha) CAPTCHA 代表「完全自動公開圖零測試，分辨對方是電腦還是人類」（Completely Automated Public Turing test to tell Computers and Humans Apart）。換句話說，CAPTCHA 提供一個對人類很簡單但是電腦很難解的問題。
+CAPTCHA 的目的是避免網站被人用程式濫用，像是在留言欄裡面寫惡意網站的網址，或者選舉時大量灌票。
 
-Typical problem that is still quite tricky for computer algorithms is image recognition. That's why a common CAPTCHA shows
-an image with some text user should read and enter into input field.
+
+對目前的電腦來說，圖像辨認還是一個蠻困難的問題，所以一個 CAPTCHA 常見的做法是顯示一張圖片，要求使用者輸入裡面的內容。
 
 如何在表單裡面加入 CAPTCHA
 -------------------------

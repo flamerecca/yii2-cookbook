@@ -16,7 +16,7 @@ Car
 |- HeavyCar
 ```
 
-Get ready
+準備
 ---------
 
 We'll use basic application. After creating and setting up database execute the follwing SQL to create the table
@@ -36,7 +36,7 @@ INSERT INTO car (id, NAME, TYPE) VALUES (1, 'Kamaz', 'heavy'), (2, 'Ferrari', 's
 Now use Gii to generate `Car` model.
 
 
-How to do it...
+怎麼做
 ---------------
 
 We'll need a quite simple custom query class in order to always apply car type to query condition. Create `models/CarQuery.php`:
@@ -82,7 +82,7 @@ class SportCar extends Car
 }
 ```
 
-Then `models/HeavyCar.php`:
+然後撰寫 `models/HeavyCar.php`:
 
 ```php
 namespace app\models;
@@ -145,7 +145,7 @@ The output should be:
 
 That means models are now instantiated according to `type` field and the search is performed as expected.
 
-How it works...
+運作原理
 ---------------
 
 `SportCar` and `HeavyCar` models are quite similar. They both extend from `Car`and have two methods overridden. In
