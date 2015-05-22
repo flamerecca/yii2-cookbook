@@ -10,10 +10,10 @@ CAPTCHA 的目的是避免網站被人用程式濫用，像是在留言欄裡面
 如何在表單裡面加入 CAPTCHA
 -------------------------
 
-Yii provides a set of ready to use classes to add CAPTCHA to any form. Let's review how it could be done.
+Yii provides a set of ready to use classes to add CAPTCHA to any form. 我們來看看該怎麼做。
 
 
-First of all, we need an action that will display an image containing text. Typical place for it is `SiteController`.
+首先，we need an action that will display an image containing text. Typical place for it is `SiteController`.
 Since there's ready to use action, it could be added via `actions()` method:
 
 ```php
@@ -72,16 +72,13 @@ Now we can actually display image and verification input box in a view containin
 
 That's it. Now robots won't pass. At least dumb ones.
 
-Simple math captcha
+用簡單數學作 CAPTCHA
 -------------------
 
-Nowadays CAPTCHA robots are relatively good at parsing image so while by using typical CAPTCHA
-you're significanly lowering number of spammy actions, some robots will still be able to parse the image
-and enter the verification code correctly.
+在最近， 程式越來越擅長處理圖形辨識。
+所以傳統的 CAPTCHA 作法效果越來越差了，因為有部分的機器人可以正確判斷你的 CAPTCHA 圖片並且輸入對應的文字。
 
-In order to prevent it we have to increase the challenge. We could add extra ripple and special effects
-to the letters on the image but while it could make it harder for computer, it certainly will make it
-significantly harder for humans which isn't really what we want.
+要避免這些攻擊，我們需要提升難度。我們可以在圖片上面加上一些漣漪和特效，不過這作法在對電腦辨識提升難度的同時，也同時對人類的辨識提升了難度，這當然不是我們希望看見的。
 
 A good solution for it is to mix a custom task into the challenge. Example of such task could be
 a simple math question such as "2 + 1 = ?". Of course, the more unique this question is, the more
