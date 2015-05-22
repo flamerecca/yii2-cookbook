@@ -1,15 +1,13 @@
-Logging: problems and solutions
+紀錄：問題與解決方法
 ===============================
 
-Logging in Yii is really flexible. Basics are easy but sometimes it takes time to configure
-everything to get what you want. There are some ready to use solutions collected below.
-Hopefully you'll find what you're looking for.
+在Yii裡面，紀錄(Logging) 是非常有彈性的。基本上很簡單，但是要取得所有想要的功能，有時很花時間。下面是一些解決方案。
+希望你可以找到需要的功能
 
-Write 404 to file and send the rest via email
+紀錄404頁面，並且不發送email
 ---------------------------------------------
 
-404 not found happens too often to email about it. Still, having 404s logged to a file could be
-useful. Let's implement it.
+404 not found頁面太常出現了，似乎不大值得寄email提醒。不過，紀錄404頁面有時還是很有幫助的，我們來實做看看！
 
 
 ```php
@@ -41,7 +39,7 @@ special in regards to logging. The speciality is the fact that HTTP status code 
 appended to the end of the log message category. In the above we're using `categories` to include
 and `except` to exclude 404 log messages.
 
-Immediate logging
+即時紀錄
 -----------------
 
 By default Yii accumulates logs till the script is finished or till the number of logs accumulated is
