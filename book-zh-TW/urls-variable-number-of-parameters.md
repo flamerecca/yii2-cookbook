@@ -2,6 +2,7 @@
 =======================================
 
 在很多狀況下，你會需要從網址收到一系列的參數編號。
+
 舉例來說，你可能希望像是 `http://example.com/products/cars/sport` 這樣的網址，會觸發 `ProductController::actionCategory`，並且該 action 收到一個陣列，包含 `cars` 和 `sport`兩個元素。
 
 準備
