@@ -17,7 +17,7 @@ Yii 有許多特色：MVC架構、ActiveRecord、I18N/L10N、caching、認證機
 -------------
 
 - 你應該先[安裝 Yii 2.0](http://www.yiiframework.com/doc-2.0/guide-start-installation.html).
-- You should be familiar with the framework basics and [官方指導](http://www.yiiframework.com/doc-2.0/guide-README.html).
+- 你應該先熟悉框架的基礎以及[官方指導](http://www.yiiframework.com/doc-2.0/guide-README.html).
 
 如何參與
 ------------------
