@@ -1,4 +1,4 @@
-Using Yii in third party apps
+在第三方 app 內使用 Yii
 =============================
 
 Legacy code. It happened to all of us. It's hard but we still need to deal with it.
@@ -6,11 +6,11 @@ Would it be cool to gradually move from legacy towards Yii? Absolutely.
 
 In this recipe you'll learn how to use Yii features in an existing PHP application.
 
-How to do it
+怎麼做
 ------------
 
-First of all, we need Yii itself. Since existing legacy application already takes care about routing,
-we don't need any application template. Let's start with `composer.json`. Either use existing one or create it:
+首先，we need Yii itself. Since existing legacy application already takes care about routing,
+we don't need any application template. Let's start with `composer.json`. 修改之前的`composer.json`或者新建一個如下：
 
 ```javascript
 {
@@ -37,7 +37,7 @@ we don't need any application template. Let's start with `composer.json`. Either
 }
 ```
 
-Now run `composer install` and you should get Yii in `vendor` directory.
+現在執行 `composer install`，你應該會在`vendor`資料夾裡面看到 Yii
 
 > Note: The dir should not be accessible from the web. Either keep it out of webroot
 or deny directory access.
@@ -109,9 +109,9 @@ $post = \app\models\Post::find()->where['id' => $id];
 echo Html::encode($post->title);
 ```
 
-How it works
+運作方式
 ------------
 
-In the `yii_init.php` we are including framework classes and composer autoloading. Important part there is that `->run()`
+在 `yii_init.php` 裡面，we are including framework classes and composer autoloading. Important part there is that `->run()`
 method isn't called like it's done in normal Yii application. That means that we're skipping routing, running controller
 etc. Legacy app already doing it.
