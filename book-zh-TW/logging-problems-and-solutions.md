@@ -42,20 +42,17 @@ and `except` to exclude 404 log messages.
 即時紀錄
 -----------------
 
-By default Yii accumulates logs till the script is finished or till the number of logs accumulated is
-enough which is 1000 messages by default for both logger itself and log target. It could be that you
-want to log messages immediately. For example, when running an import job and checking logs to see
-the progress. In this case you need to change settings via application config file:
+Yii 預設會先累積紀錄，等到程式結束或者到達一定的數量（1000筆）時才真正寫入紀錄。有時我們可能會需要是即時的紀錄。像是當我們正在運行重要的任務，希望透過log檢查進度的時候。 這種狀況下，我們需要修改 config 檔如下：
 
 ```php
 'components' => [
     'log' => [
-        'flushInterval' => 1, // <-- here
+        'flushInterval' => 1, // <-- 這裡
         'targets' => [
             'file' => [
                 'class' => 'yii\log\FileTarget',
                 'levels' => ['error', 'warning'],
-                'exportInterval' => 1, // <-- and here
+                'exportInterval' => 1, // <-- 以及這裡
             ],
         ],
     ]
