@@ -1,4 +1,4 @@
-Selecting application language
+設定語言
 ==============================
 
 When developing applications or websites for global marked, supporting multiple languages is always a requirement.
@@ -8,7 +8,7 @@ because implementation depends of requirements.
 In this recipe we’ll describe some typical cases of language selection and provide ideas and code snippets so you’ll
 be able to pick what’s required and implement it in your project.
 
-## How to set application language
+## 怎麼設定語言
 
 Setting application language is pretty simple. It can be done either via code like the following:
 
@@ -24,7 +24,7 @@ return [
     'language' => 'ru_RU',
 ];
 ```
-## Detecting language automatically
+## 自動偵測語言
 
 Detecting language automatically could help your application to conquer international markets if done properly.
 The following code shows selecting a language using information supplied by user’s browser and a list of languages
@@ -67,7 +67,7 @@ return [
 ];
 ```
 
-## Support selecting language manually
+## 手動選擇支援的語言
 
 While it sounds like a great idea to always detect language, it’s usually not enough. Detection could fail so
 user will get language he doesn’t know, user may know many languages but prefer, for example, English for information
