@@ -1,4 +1,4 @@
-Running Yii 2.0 on HHVM
+在 HHVM 上面執行
 =======================
 
 HHVM is an alternative PHP engine made by Facebook which is performing significantly better than
@@ -8,13 +8,13 @@ for virtually any application. For processing-intensive ones it could be times f
 Linux only
 -----------
 
-HHVM is linux only. It doesn't have anything for Windows and for MacOS it works in limited mode without JIT compiler.
+HHVM 只能在 Linux 上面運行。沒有辦法在 Windows上面運行，在 MacOS上面運行則是受限制版本，沒有 JIT compiler。
 
 
-Installing HHVM
+安裝 HHVM
 ---------------
 
-Installing is easy. Here's how to do it for Debian:
+安裝 HHVM 蠻簡單的。 以下是怎麼在 Debian 上面安裝：
 
 ```
 sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e7281be7a449
@@ -25,7 +25,7 @@ sudo apt-get install hhvm
 
 Instructions for other distributions [are available](https://github.com/facebook/hhvm/wiki/Getting-Started).
 
-Nginx config
+Nginx 設定
 ------------
 
 You can have both HHVM and php-fpm on the same server. Switching between them using nginx is easy since
@@ -74,7 +74,7 @@ server {
 
 As you can see, configurations are identical except port number.
 
-Test it first
+測試
 -----------
 
 HHVM is more or less [tested to work with most frameworks out there](http://hhvm.com/frameworks/). Yii isn't exception.
@@ -82,7 +82,7 @@ Except minor issues everything should work. Still, there are
 [many incompatibilities comared to PHP](https://github.com/facebook/hhvm/labels/php5%20incompatibility) so make sure to
 test application well before going live.
 
-Error reporting
+錯誤回報
 ---------------
 
 HHVM behavior about errors is different than PHP one so by default you're getting nothing but a blank white screen instead
