@@ -36,8 +36,7 @@ the fully qualified exception class name is the category we can use to filter me
 configuring targets. 404 can be triggered by throwing `yii\web\NotFoundHttpException` or automatically.
 In both cases exception class is the same and is inherited from `\yii\web\HttpException` which is a bit
 special in regards to logging. The speciality is the fact that HTTP status code prepended by `:` is
-appended to the end of the log message category. In the above we're using `categories` to include
-and `except` to exclude 404 log messages.
+appended to the end of the log message category. 上面的程式碼，我們用 `categories` 以在檔案紀錄內包含 404 錯誤，用 `except` 以在email 提醒中排除 404 錯誤。
 
 即時紀錄
 -----------------
