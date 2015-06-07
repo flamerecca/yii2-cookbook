@@ -60,7 +60,7 @@ $cookie = new Cookie([
 ---------------------------------------------------
 
 In case of autologin or "remember me" cookie, the same quirks as in case of subdomain cookies are applying.
-But this time you need to configure user component, setting `identityCookie` array to desired cookie config.
+但是這次你需要一起調整 user 元件，設定 `identityCookie` 陣列。
 
 打開 Yii 的config 檔案，並在 component 設定裡面新增 `identityCookie` 參數：
 
